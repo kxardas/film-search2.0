@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Movie search</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <h1 class="title">Search a movie</h1>
+    <div class="search">
+      <input type="text" id="movie-name" class="input">
+      <label for="movie-name" class="searchBtn" id="searchBtn"><i class='bx bx-search-alt'></i></label>
+    </div>
+
+    <div class="result" id="res">
+      <div class="card404" id="not-found">
+        <img src="" width="300px" id="image404">
+
+      </div>
+    </div>
+    <div id="pages">
+      
+    </div>
+  </div>
+
+  <div id="myModal">
+    <span id="closeButton"><i class='bx bx-x'></i></span>
+    <img id="modalPoster" src="" alt="Poster">
+    <div id="modalRating"></div>
+    <div id="modalLink"></div>
+    <div id="modalInfo">
+      <span>Title:&nbsp<div id="modalTitle"></div></span>
+      <span>Released:&nbsp<div id="modalYear"></div></span>
+      <span>Length:&nbsp<div id="modalLength"></div></span>
+      <span>Genre:&nbsp<div id="modalGenre"></div></span>
+      <span>Director:&nbsp<div id="modalDirector"></div></span>      
+      <span>Plot:&nbsp<div id="modalPlot"></div></span>      
+    </div>
+  </div>
+
+  <div class="bg" id="bg"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
